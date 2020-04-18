@@ -1,6 +1,8 @@
-public class Workstation1 extends Workstation {
-    public Workstation1(){
-        super("ws1.dat");
-    }
+import java.io.FileNotFoundException;
 
+public class Workstation1 extends Workstation {
+
+    public Workstation1(String dataPath) throws FileNotFoundException {
+        super(dataPath);
+    }
 }

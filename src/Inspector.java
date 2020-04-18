@@ -3,11 +3,8 @@ public abstract class Inspector{
 
     public Inspector(){
         compFactory = new ComponentFactory();
-
     }
 
     public abstract Component getNextComponent();
-    public void inspect(Component c){
-
-    }
+    public abstract void inspect(Component c);
 }

@@ -1,15 +1,25 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public abstract class Workstation{
-    protected String workTimesFilePath;
     protected Buffer<Component1> c1Buffer;
-    public String getWorkTimesFilePath() {
-        return workTimesFilePath;
-    }
-    public Workstation(String workTimesFile){
-        this.workTimesFilePath = workTimesFile;
+    protected ArrayList<Float> procTimes;
+
+    public Workstation(String dataPath) throws FileNotFoundException {
         c1Buffer = new Buffer<Component1>();
-    }
-    public void setWorkTimesFilePath(String workTimesFilePath) {
-        this.workTimesFilePath = workTimesFilePath;
+        procTimes = new ArrayList<>();
+
+        File file = new File(dataPath);
+        Scanner scanner = new Scanner(file);
+        while (scanner.hasNextLine()) {
+            try {
+                procTimes.add(Float.parseFloat(scanner.nextLine()));
+            } catch (NumberFormatException e) {
+                System.out.printf("Failed to read string, but continuing: %s\n", e.toString());
+            }
+        }
     }
 
     public Buffer<Component1> getc1Buffer(){
