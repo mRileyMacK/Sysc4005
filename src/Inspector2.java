@@ -8,6 +8,8 @@ public class Inspector2 extends Inspector{
     private Random rd;
     private ArrayList<Float> comp2InspTimes;
     private ArrayList<Float> comp3InspTimes;
+    private int comp2InspTimesIndex;
+    private int comp3InspTimesIndex;
     private Buffer<Component2> comp2Buf;
     private Buffer<Component3> comp3Buf;
 
@@ -15,9 +17,13 @@ public class Inspector2 extends Inspector{
             String comp2DataPath,
             String comp3DataPath,
             Buffer<Component2> comp2Buf,
-            Buffer<Component3> comp3Buf
+            Buffer<Component3> comp3Buf,
+            FactoryWorkstations fw,
+            int iterations
     ) throws FileNotFoundException {
-        super();
+        super(fw, iterations);
+        comp2InspTimesIndex = 0;
+        comp3InspTimesIndex = 0;
         rd = new Random();
         comp2InspTimes = new ArrayList<>();
         comp3InspTimes = new ArrayList<>();
@@ -56,7 +62,66 @@ public class Inspector2 extends Inspector{
         }
     }
 
+
+
     @Override
-    public void inspect(Component c) {
+    public Workstation passToBuffer(Component c) {
+        if(c instanceof Component2){
+            while(true){
+                if(workstations.getW2().getC2Buffer().getComponentQueue().offer((((Component2)c)))){
+                    return workstations.getW2();
+                }
+            }
+        }
+        else if (c instanceof Component3){
+            while(true){
+                if(workstations.getW3().getC3Buffer().getComponentQueue().offer((((Component3)c)))){
+                    return workstations.getW2();
+                }
+            }
+        }
+        else{
+            System.out.println("Inspector 2 has passed Component 1");
+            return null;
+        }
+
+    }
+
+    protected Float getNextCompTime(Component c) {
+        Float toRet;
+        if(c instanceof Component2){
+            if(comp2InspTimesIndex < comp2InspTimes.size()){
+                toRet = comp2InspTimes.get(comp2InspTimesIndex);
+                comp2InspTimesIndex++;
+                return toRet;
+            }
+            else{
+                toRet = comp2InspTimes.get(0);
+                comp2InspTimesIndex = 1;
+                return toRet;
+            }
+        }
+        else if(c instanceof Component3){
+            if(comp3InspTimesIndex < comp3InspTimes.size()){
+                toRet = comp3InspTimes.get(comp3InspTimesIndex);
+                comp3InspTimesIndex++;
+                return toRet;
+            }
+            else{
+                toRet = comp3InspTimes.get(0);
+                comp3InspTimesIndex = 1;
+                return toRet;
+            }
+        }
+        else{
+            System.out.println("Wrong component type");
+            return null;
+        }
+
+    }
+
+    @Override
+    public int getNum() {
+        return 2;
     }
 }

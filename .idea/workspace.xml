@@ -2,6 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8cb0ee5-36f1-4da4-a6be-306135247f95" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FactoryWorkstations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Product1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Product2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Product3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Buffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Buffer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FacilitySimulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FacilitySimulation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Inspector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Inspector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Inspector1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Inspector1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Inspector2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Inspector2.java" afterDir="false" />
@@ -16,15 +30,15 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="Bundled (Maven 3)" />
-      </MavenGeneralSettings>
-    </option>
   </component>
   <component name="ProjectId" id="1aBm6QPJCXLufOy8rXFGVQf3utc" />
   <component name="ProjectViewState">
@@ -34,6 +48,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -125,21 +140,33 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="421" y="76" key="#FacilitySimulation_(1)/0.23.1280.777@0.23.1280.777" timestamp="1586217460372" />
-    <state width="1028" height="197" key="GridCell.Tab.0.bottom" timestamp="1586224392058">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state x="562" y="147" key="#com.intellij.ide.util.MemberChooser" timestamp="1587400127789">
+      <screen x="0" y="23" width="1440" height="824" />
+    </state>
+    <state x="562" y="147" key="#com.intellij.ide.util.MemberChooser/0.23.1440.824@0.23.1440.824" timestamp="1587400127789" />
+    <state width="1339" height="246" key="GridCell.Tab.0.bottom" timestamp="1587406740263">
+      <screen x="0" y="23" width="1440" height="824" />
     </state>
     <state width="1028" height="197" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1586224392058" />
-    <state width="1028" height="197" key="GridCell.Tab.0.center" timestamp="1586224392057">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state width="1339" height="246" key="GridCell.Tab.0.bottom/0.23.1440.824@0.23.1440.824" timestamp="1587406740263" />
+    <state width="1339" height="246" key="GridCell.Tab.0.center" timestamp="1587406740261">
+      <screen x="0" y="23" width="1440" height="824" />
     </state>
     <state width="1028" height="197" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1586224392057" />
-    <state width="1028" height="197" key="GridCell.Tab.0.left" timestamp="1586224392057">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state width="1339" height="246" key="GridCell.Tab.0.center/0.23.1440.824@0.23.1440.824" timestamp="1587406740261" />
+    <state width="1339" height="246" key="GridCell.Tab.0.left" timestamp="1587406740258">
+      <screen x="0" y="23" width="1440" height="824" />
     </state>
     <state width="1028" height="197" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1586224392057" />
-    <state width="1028" height="197" key="GridCell.Tab.0.right" timestamp="1586224392057">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state width="1339" height="246" key="GridCell.Tab.0.left/0.23.1440.824@0.23.1440.824" timestamp="1587406740258" />
+    <state width="1339" height="246" key="GridCell.Tab.0.right" timestamp="1587406740262">
+      <screen x="0" y="23" width="1440" height="824" />
     </state>
     <state width="1028" height="197" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1586224392057" />
+    <state width="1339" height="246" key="GridCell.Tab.0.right/0.23.1440.824@0.23.1440.824" timestamp="1587406740262" />
+    <state x="414" y="171" width="670" height="676" key="search.everywhere.popup" timestamp="1587403245143">
+      <screen x="0" y="23" width="1440" height="824" />
+    </state>
+    <state x="414" y="171" width="670" height="676" key="search.everywhere.popup/0.23.1440.824@0.23.1440.824" timestamp="1587403245143" />
   </component>
 </project>
